@@ -3,29 +3,44 @@
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.Profile-pic {
+    height: 10vh;
+    pointer-events: none;
 }
 
 .App-header {
     display: flex;
     align-items: center;
-    color: white;
-    background-color: #282c34;
+    color: rgb(0, 0, 0);
+    background-color: #aa2727;
     padding: 0.5rem;
     gap: 1rem;
 }
 
-.App-title {
-    font-size: 1.75rem;
-    margin: 0;
+.App-navigation {
+    flex: 1 1 auto;
+}
+
+.Nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 0 0 0;
     padding: 0;
 }
 
+.Page-Link {
+    font-size: 2rem;
+    margin: 0 2rem 0 0;
+}
+
+.Home-Page-Link {
+    font-size: 3rem;
+    margin: 0 2rem 0 0;
+}
+
 .App-header a:link, .App-header a:visited {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
