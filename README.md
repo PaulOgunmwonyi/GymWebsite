@@ -1,4 +1,4 @@
-# ** Smarter Lifts **
+## Smarter Lifts
 Problem statement: Throughout my gym journey I've found it annoying having to manage multiple different 
 apps and websites to keep track of my stats. These include recording my workouts in a Google Docs, tracking 
 my calories in a tracker app, and calculating my one rep maxes and coloric needs on the web. 
