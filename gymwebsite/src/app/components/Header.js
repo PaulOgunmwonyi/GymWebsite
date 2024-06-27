@@ -9,9 +9,9 @@ function Header({userFullName}) {
         </Link>
         <nav className="App-navigation">
             <ul className='Nav-links'>
-                <li><Link href="/workoutplans" className='Page-Link'>Workout Plans</Link></li>
-                <li><Link href="/foodtracking" className='Page-Link'>Food Tracking</Link></li>
-                <li><Link href="/personalgoals" className='Page-Link'>Personal Goals</Link></li>
+                <li><Link href="/login/workoutplans" className='Page-Link'>Workout Plans</Link></li>
+                <li><Link href="/login/foodtracking" className='Page-Link'>Food Tracking</Link></li>
+                <li><Link href="/login/personalgoals" className='Page-Link'>Personal Goals</Link></li>
             </ul>
         </nav>
         <strong>Welcome {userFullName}!</strong>
@@ -22,3 +22,5 @@ function Header({userFullName}) {
 }
 
 export default Header;
+
+

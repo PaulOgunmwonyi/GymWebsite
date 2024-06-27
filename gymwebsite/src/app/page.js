@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import './globals.css';
-import { Login } from "./login";
-import { Register } from "./register";
+import { Login } from "./loginPage";
+import { Register } from "./registerPage";
 
 export default function Home() {
   const [currentForm, setCurrentForm] = useState('login');
