@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <body>
-          <Header userFullName={"Sample User"}></Header>
+       <Header userFullName={"Sample User"}></Header>
           <main className="App">
             {children}
           </main>
