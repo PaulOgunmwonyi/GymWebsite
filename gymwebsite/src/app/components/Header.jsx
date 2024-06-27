@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './Header.css';
 
-function Header({userFullName}) {
+export default function Header({userFullName}) {
     return <header className="App-header">
         <img src="/dumbbells.png" className="App-logo" alt="logo" />
         <Link href="/">
@@ -9,9 +9,9 @@ function Header({userFullName}) {
         </Link>
         <nav className="App-navigation">
             <ul className='Nav-links'>
-                <li><Link href="/workoutplans" className='Page-Link'>Workout Plans</Link></li>
-                <li><Link href="/foodtracking" className='Page-Link'>Food Tracking</Link></li>
-                <li><Link href="/personalgoals" className='Page-Link'>Personal Goals</Link></li>
+                <li><Link href="/login/workoutplans" className='Page-Link'>Workout Plans</Link></li>
+                <li><Link href="/login/foodtracking" className='Page-Link'>Food Tracking</Link></li>
+                <li><Link href="/login/personalgoals" className='Page-Link'>Personal Goals</Link></li>
             </ul>
         </nav>
         <strong>Welcome {userFullName}!</strong>
@@ -21,4 +21,4 @@ function Header({userFullName}) {
     </header>
 }
 
-export default Header;
+

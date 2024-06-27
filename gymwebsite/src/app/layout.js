@@ -1,10 +1,12 @@
+"use client"
+
 import "./globals.css";
-import Header from './components/Header';
+import Header from "./components/Header";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <body>
+       <body>  
        <Header userFullName={"Sample User"}></Header>
           <main className="App">
             {children}
