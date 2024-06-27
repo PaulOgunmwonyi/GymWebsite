@@ -13,10 +13,10 @@ export default function Home() {
   }
 
   return (
-    <div className="App">
-      {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      }
-    </div>
+      <div className="App">
+        {
+          currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        }
+      </div>
   );
 }

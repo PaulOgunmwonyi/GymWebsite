@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './Header.css';
 
-function Header({userFullName}) {
+export default function Header({userFullName}) {
     return <header className="App-header">
         <img src="/dumbbells.png" className="App-logo" alt="logo" />
         <Link href="/">
@@ -20,7 +20,5 @@ function Header({userFullName}) {
         </Link>
     </header>
 }
-
-export default Header;
 
 

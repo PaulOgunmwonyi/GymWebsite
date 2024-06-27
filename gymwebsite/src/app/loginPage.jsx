@@ -19,7 +19,7 @@ export const Login = (props) => {
                 <label htmlFor="password">Password</label>
                 <input value={passWord} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
                 <li><Link href="/login" className='LoginButton'>
-                    <button type="submit">Log In</button>
+                    <button onClick={() => props.onFormSwitch('header')}>Log In</button>
                 </Link></li>
 
             </form>
