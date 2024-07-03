@@ -5,9 +5,7 @@ export default function HeaderBasic() {
     return <header className="App-header">
         <div className="left-section">
             <img src="/dumbbells.png" className="App-logo" alt="logo" />
-            <Link href="/">
-                <hi className='Home-Page-Link'>SMARTER LIFTS</hi>
-            </Link>
+            <hi className='Home-Page-Link'>SMARTER LIFTS</hi>
         </div>
         <div className="right-section">
             <Link href="/profile"> 

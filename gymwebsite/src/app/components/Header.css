@@ -20,6 +20,7 @@
     background-color: #3A9EC9;
     padding: 0.5rem;
     gap: 1rem;
+    list-style: none;
 }
 
 .App-navigation {
