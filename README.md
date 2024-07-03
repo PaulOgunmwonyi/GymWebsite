@@ -8,6 +8,7 @@ reduce hassle. The various services of the application will also build off each 
 constant user input. These advantages will not only improve existing gymgoers workload but also encourage 
 non-gymgoers due to the ease of access to important information. 
 
-Notes to self:
+Notes:
 - used these sites for reference:
 - https://react.dev/learn/start-a-new-react-project
+- https://www.youtube.com/watch?v=Y-XW9m8qOis 

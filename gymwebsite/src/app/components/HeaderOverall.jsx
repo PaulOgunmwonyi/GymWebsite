@@ -1,6 +1,6 @@
 // Header.js
 import React from 'react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/LoginContext';
 import Header from './Header';
 import HeaderBasic from './HeaderBasic';
 
