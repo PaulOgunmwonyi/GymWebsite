@@ -1,17 +1,23 @@
 "use client"
 
 import "./globals.css";
-import Header from "./components/Header";
+import React, { useState } from "react";
+import { AuthProvider } from "./contexts/AuthContext";
+import TheHeader from "./components/TheHeader";
 
 export default function RootLayout({ children }) {
+
+
   return (
-    <html lang="en">
-       <body>  
-       <Header userFullName={"Sample User"}></Header>
-          <main className="App">
-            {children}
-          </main>
-       </body>
-    </html>
+    <AuthProvider>
+      <html lang="en">
+        <body>  
+            <TheHeader></TheHeader>
+            <main className="App">
+              {children}
+            </main>
+        </body>
+      </html>
+    </AuthProvider>
   );
 }
