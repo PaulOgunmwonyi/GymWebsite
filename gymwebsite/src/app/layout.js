@@ -1,9 +1,8 @@
 "use client"
 
 import "./globals.css";
-import React, { useState } from "react";
-import { AuthProvider } from "./contexts/AuthContext";
-import TheHeader from "./components/TheHeader";
+import { AuthProvider } from "./contexts/LoginContext";
+import TheHeader from "./components/HeaderOverall";
 
 export default function RootLayout({ children }) {
 

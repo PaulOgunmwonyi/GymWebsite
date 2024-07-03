@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { useAuth } from "./contexts/AuthContext";
+import { useAuth } from "./contexts/LoginContext";
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
