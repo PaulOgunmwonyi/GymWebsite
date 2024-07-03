@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useAuth } from "./contexts/AuthContext";
 
 export const Login = (props) => {
     const [email, setEmail] = useState('');
     const [passWord, setPass] = useState('');
+    const { isLoggedIn, setIsLoggedIn } = useAuth();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,7 +21,7 @@ export const Login = (props) => {
                 <label htmlFor="password">Password</label>
                 <input value={passWord} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
                 <li><Link href="/login" className='LoginButton'>
-                    <button onClick={() => props.onFormSwitch('header')}>Log In</button>
+                    <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Log In</button>
                 </Link></li>
 
             </form>
