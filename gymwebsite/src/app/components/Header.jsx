@@ -2,7 +2,7 @@ import Link from 'next/link';
 import './Header.css';
 import { useAuth } from '../contexts/LoginContext';
 
-export default function Header({userFullName}) {
+export default function Header() {
     const { isLoggedIn, setIsLoggedIn } = useAuth();
 
     return <header className="App-header">
@@ -15,7 +15,6 @@ export default function Header({userFullName}) {
                 <li><Link href="/login/personalgoals" className='Page-Link'>Personal Goals</Link></li>
             </ul>
         </nav>
-        <strong>Welcome {userFullName}!</strong>
         <li><Link href="/" className='LogoutButton'>
                     <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Log Out</button>
         </Link></li>

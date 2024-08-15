@@ -8,9 +8,7 @@ export default function HeaderBasic() {
             <hi className='Home-Page-Link'>SMARTER LIFTS</hi>
         </div>
         <div className="right-section">
-            <Link href="/profile"> 
-                <img src="/pfp.jpg" className="Profile-pic" alt="pfp" /> 
-            </Link>
+            <img src="/pfp.jpg" className="Profile-pic" alt="pfp" /> 
         </div>
     </header>
 }

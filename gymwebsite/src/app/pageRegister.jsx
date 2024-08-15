@@ -23,7 +23,7 @@ export const Register = (props) => {
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">Password</label>
             <input value={passWord} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-            <li><Link href="/login" className='LoginButton'>
+            <li><Link href="/login/workoutplans" className='LoginButton'>
                 <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Log In</button>
             </Link></li>
         </form>
