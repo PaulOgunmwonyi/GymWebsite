@@ -13,12 +13,12 @@
 }
 
 .App-header {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', sans-serif;
     display: flex;
     align-items: center;
     color: rgb(0, 0, 0);
     justify-content: space-between; 
-    background-color: #3A9EC9 ;
+    background-color: #66bde2 ;
     padding: 0.5rem;
     gap: 1rem;
     list-style: none;

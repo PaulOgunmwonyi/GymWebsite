@@ -1,40 +1,40 @@
 .App {
-  text-align: center;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  text-align: center !important;
+  display: flex !important;
+  min-height: 100vh !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
   background-image: radial-gradient(circle, #d14092, #c04ba4, #aa56b3, #9160be, #7368c5, #5f70c9, #4978cb, #327eca, #2987cb, #288fcb, #2e97ca, #3a9ec9);;
 }
 
 .auth-form-container, .login-form, .register-form {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 @media screen and (min-width: 600px) {
   .auth-form-container {
-    padding: 5rem;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0.5rem;
+    padding: 5rem !important;
+    border: 1px solid white !important;
+    border-radius: 10px !important;
+    margin: 0.5rem !important;
   }
 }
 
 label {
-  text-align: left;
-  padding: 0.25rem 0;
+  text-align: left !important;
+  padding: 0.25rem 0 !important;
 }
 
 input {
-  margin: 0.5rem 0;
-  padding: 1rem;
-  border: none;
-  border-radius: 10px;
+  margin: 0.5rem 0 !important;
+  padding: 1rem !important;
+  border: none !important;
+  border-radius: 10px !important;
 }
 
 button {
@@ -53,6 +53,6 @@ button {
 }
 
 html, body {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }

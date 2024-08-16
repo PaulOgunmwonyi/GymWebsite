@@ -18,7 +18,7 @@ export default function Header() {
         <li><Link href="/" className='LogoutButton'>
                     <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Log Out</button>
         </Link></li>
-        <Link href="/profile"> 
+        <Link href="/login/profile"> 
             <img src="/pfp.jpg" className="Profile-pic" alt="pfp" /> 
         </Link>
     </header>

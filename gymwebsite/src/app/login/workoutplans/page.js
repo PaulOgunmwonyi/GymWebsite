@@ -1,9 +1,12 @@
 'use client'
-import MyCard from "@/app/components/card";
+import MyCard from "@/app/components/Card";
+import CardGrid from "@/app/components/CardGrid";
 
 
 export default function HomePage() {
     return ( 
-       <MyCard></MyCard>
+        <>
+            <CardGrid></CardGrid>
+        </>
     );
 };

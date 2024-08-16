@@ -12,3 +12,4 @@ Notes:
 - used these sites for reference:
 - https://react.dev/learn/start-a-new-react-project
 - https://www.youtube.com/watch?v=Y-XW9m8qOis 
+- https://react-bootstrap.netlify.app/docs/components/cards/#card-styles
