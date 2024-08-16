@@ -1,6 +1,6 @@
 .App-logo {
-    height: 10vh;
-    pointer-events: none;
+    height: 10vh ;
+    pointer-events: none ;
     border: 5px solid white;
     border-radius: 20px;
 }
@@ -13,11 +13,12 @@
 }
 
 .App-header {
+    font-family: 'Arial', sans-serif;
     display: flex;
     align-items: center;
     color: rgb(0, 0, 0);
     justify-content: space-between; 
-    background-color: #3A9EC9;
+    background-color: #3A9EC9 ;
     padding: 0.5rem;
     gap: 1rem;
     list-style: none;

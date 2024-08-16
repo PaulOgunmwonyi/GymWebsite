@@ -38,18 +38,18 @@ input {
 }
 
 button {
-  border: none;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #7439db;
+  border: none !important;
+  background-color: white !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  color: #7439db !important;
 }
 
 .link-btn {
-  background: none;
-  color: white;
-  text-decoration: underline;
+  background: none !important;
+  color: white !important;
+  text-decoration: underline !important;
 }
 
 html, body {

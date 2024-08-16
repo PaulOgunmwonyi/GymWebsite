@@ -1,11 +1,9 @@
 'use client'
+import MyCard from "@/app/components/card";
+
 
 export default function HomePage() {
     return ( 
-        <>
-            <article className="block">
-                <p> Hi!</p>
-            </article>
-    </>
+       <MyCard></MyCard>
     );
-}; 
+};
