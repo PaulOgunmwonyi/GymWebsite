@@ -2,7 +2,7 @@
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function MyCard() {
+export default function MyCard(props) {
     return ( 
         <>
             <Card
@@ -12,12 +12,11 @@ export default function MyCard() {
               style={{ width: '18rem' }}
               className="mb-2"
             >
-              <Card.Header>Header</Card.Header>
+              <Card.Header> {'Group:'} {props.group} </Card.Header>
               <Card.Body>
-                <Card.Title>{'primary'} Card Title </Card.Title>
+                <Card.Title> {'Workout:'} {props.name} </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  {props.sets} x {props.reps} : {props.weight} lbs
                 </Card.Text>
               </Card.Body>
             </Card>
