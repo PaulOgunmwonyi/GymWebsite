@@ -1,6 +1,7 @@
 'use client'
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Card.css'
 
 export default function MyCard(props) {
     return ( 
@@ -18,6 +19,7 @@ export default function MyCard(props) {
                 <Card.Text>
                   {props.sets} x {props.reps} : {props.weight} lbs
                 </Card.Text>
+                <button className = "card-button"> Edit </button>
               </Card.Body>
             </Card>
         </>
