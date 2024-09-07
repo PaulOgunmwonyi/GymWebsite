@@ -29,7 +29,7 @@ export default function CardGrid() {
         <div className="grid-container">
             {workouts.map((item) => (
                 <GridItem><MyCard 
-                    group = {item.group} 
+                    group = {item.groupname} 
                     name = {item.name} 
                     weight = {item.weight}
                     reps = {item.reps}

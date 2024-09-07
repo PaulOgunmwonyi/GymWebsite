@@ -21,11 +21,11 @@ app.get('/api/workouts', async (req, res) => {
 
 // Route to add a new workout
 app.post('/api/workouts', async (req, res) => {
-  const { group_name, name, weight, reps, sets } = req.body;
+  const { groupname, name, weight, reps, sets } = req.body;
   try {
     const result = await pool.query(
-      'INSERT INTO workout (group_name, name, weight, reps, sets) VALUES ($1, $2, $3, $4, $5) RETURNING *',
-      [group_name, name, weight, reps, sets]
+      'INSERT INTO workout (groupname, name, weight, reps, sets) VALUES ($1, $2, $3, $4, $5) RETURNING *',
+      [groupname, name, weight, reps, sets]
     );
     res.status(201).json(result.rows[0]);
   } catch (err) {
@@ -52,11 +52,11 @@ app.get('/api/workouts/:id', async (req, res) => {
 // Route to update a workout
 app.put('/api/workouts/:id', async (req, res) => {
   const { id } = req.params;
-  const { group_name, name, weight, reps, sets } = req.body;
+  const { groupname, name, weight, reps, sets } = req.body;
   try {
     const result = await pool.query(
-      'UPDATE workout SET group_name = $1, name = $2, weight = $3, reps = $4, sets = $5 WHERE id = $6 RETURNING *',
-      [group_name, name, weight, reps, sets, id]
+      'UPDATE workout SET groupname = $1, name = $2, weight = $3, reps = $4, sets = $5 WHERE id = $6 RETURNING *',
+      [groupname, name, weight, reps, sets, id]
     );
     if (result.rows.length === 0) {
       return res.status(404).json({ error: 'Workout not found' });

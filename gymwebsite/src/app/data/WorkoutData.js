@@ -13,3 +13,22 @@ export const getAllWorkouts = async () => {
     }
 };
   
+export async function addWorkout(workout) {
+    try {
+      const response = await fetch('http://localhost:5001/api/workouts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(workout),
+      });
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Error adding workout:', error);
+    }
+  }
+  
+  
