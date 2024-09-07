@@ -1,6 +1,7 @@
 import MyCard from './Card';
 import './CardGrid.css'
-import dummyWorkoutData from '../data/dummyWorkoutData';
+import React, { useEffect, useState } from 'react';
+import { getAllWorkouts } from '../data/WorkoutData';
 
 export default function CardGrid() {
     const GridItem = ({ children }) => (
@@ -9,9 +10,24 @@ export default function CardGrid() {
         </div>
     );
 
+    const [workouts, setWorkouts] = useState([]);
+
+    useEffect(() => {
+        const fetchWorkouts = async () => {
+          try {
+            const data = await getAllWorkouts();
+            setWorkouts(data);
+          } catch (error) {
+            console.error('Error fetching workouts:', error);
+          }
+        };
+    
+        fetchWorkouts();
+      }, []);
+
     return (
         <div className="grid-container">
-            {dummyWorkoutData.map((item) => (
+            {workouts.map((item) => (
                 <GridItem><MyCard 
                     group = {item.group} 
                     name = {item.name} 
@@ -23,16 +39,3 @@ export default function CardGrid() {
         </div>
     )
 }
-
-/*
- <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            <GridItem><MyCard></MyCard></GridItem>
-            */
