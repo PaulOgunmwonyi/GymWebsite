@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { addWorkout } from '../data/WorkoutData';
 import './PopUpSelection.css';
 
-export default function PopUpSelection () {
+export default function PopUpSelection ({ updateWorkouts }) {
     // State for controlling if the popup is open or closed
     const [isOpen, setIsOpen] = useState(false);
     const openPopup = () => setIsOpen(true);
@@ -30,7 +30,7 @@ export default function PopUpSelection () {
     const addAWorkout = async () => {
         try {
             const addedWorkout = await addWorkout(newWorkout);
-            console.log('Workout added:', addedWorkout);
+            updateWorkouts(addedWorkout);
             closePopup(); // Close the popup after submission
             // Optionally, clear the form if needed
             setNewWorkout({ groupname: '', name: '', weight: '', reps: '', sets: '' });
@@ -84,9 +84,10 @@ export default function PopUpSelection () {
                         id="sets" 
                         name="sets" 
                     />
-
-                    <button onClick={addAWorkout}>Submit</button>
-                    <button onClick={closePopup}>Close</button>
+                    <div className="button-container">
+                        <button className="pop-button" onClick={addAWorkout}>Submit</button>
+                        <button className="pop-button" onClick={closePopup}>Close</button>
+                    </div>
                 </div>
             </div>
         );
