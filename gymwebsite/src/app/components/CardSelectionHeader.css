@@ -1,9 +1,9 @@
 .Selection-header {
     font-family: 'Georgia', sans-serif;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    justify-content: space-between; 
     background-color: white ;
     padding: 0.5rem;
     gap: 1rem;
@@ -12,14 +12,3 @@
     margin-top: 20px;
     border-radius: 10px !important;
 }
-
-.add-button {
-    border: none !important;
-    background-color: #66bde2 !important;
-    padding: 0px !important;
-    border-radius: 10px !important;
-    cursor: pointer !important;
-    color: white !important;
-    width: 100px;
-    height: 60px;
-  }

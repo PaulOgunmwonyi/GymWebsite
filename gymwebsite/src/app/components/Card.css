@@ -1,4 +1,4 @@
-.card-button {
+.edit-button {
     border: none !important;
     background-color: #66bde2 !important;
     padding: 0px !important;
@@ -7,4 +7,21 @@
     color: white !important;
     width: 100px;
     height: 40px;
+  }
+
+  .delete-button {
+    border: none !important;
+    background-color: #66bde2 !important;
+    padding: 0px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    color: white !important;
+    width: 100px;
+    height: 40px;
+  }
+
+  .button-container {
+    display: flex; 
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
   }

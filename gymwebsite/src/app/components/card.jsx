@@ -19,7 +19,10 @@ export default function MyCard(props) {
                 <Card.Text>
                   {props.sets} x {props.reps} : {props.weight} lbs
                 </Card.Text>
-                <button className = "card-button"> Edit </button>
+                <div className="button-container">
+                  <button className = "edit-button"> Edit </button>
+                  <button className = "delete-button"> Delete </button>
+                </div>
               </Card.Body>
             </Card>
         </>
