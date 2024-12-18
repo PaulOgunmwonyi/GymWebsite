@@ -1,7 +1,7 @@
 import MyCard from './Card';
 import './CardGrid.css';
 import React, { useEffect, useState } from 'react';
-import { getAllWorkouts } from '../data/WorkoutData';
+import { getAllWorkouts } from '../api/WorkoutData';
 import PopUpSelection from './PopUpSelection';
 
 export default function CardGrid() {
@@ -31,6 +31,11 @@ export default function CardGrid() {
       setWorkouts((prevWorkouts) => [newWorkout, ...prevWorkouts]); // Add the new workout to the beginning of the list
     };
 
+    // Function to delete a workout
+    const updateWorkoutsWithDelete = (id) => {
+      setWorkouts((prevWorkouts) => prevWorkouts.filter(workout => workout.id !== id));
+    };    
+
     return (
       <div>
         <PopUpSelection updateWorkouts={updateWorkouts} /> 
@@ -38,6 +43,8 @@ export default function CardGrid() {
             {workouts.map((item, index) => (
                 <GridItem key={index}>
                     <MyCard 
+                        updateWorkouts={updateWorkoutsWithDelete}
+                        number={item.id}
                         group={item.groupname} 
                         name={item.name} 
                         weight={item.weight}

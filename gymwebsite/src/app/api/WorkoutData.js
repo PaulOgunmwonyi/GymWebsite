@@ -31,4 +31,22 @@ export async function addWorkout(workout) {
     }
   }
   
+  export const deleteWorkout = async (id) => {
+    try {
+        const response = await fetch(`http://localhost:5001/api/workouts/${id}`, {
+            method: 'DELETE',
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        return data;  // This returns the deleted workout data
+    } catch (error) {
+        console.error('Error deleting workout:', error);
+        throw error;
+    }
+};
+
   

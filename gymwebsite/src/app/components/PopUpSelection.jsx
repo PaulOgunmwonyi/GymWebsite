@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { addWorkout } from '../data/WorkoutData';
+import { addWorkout } from '../api/WorkoutData';
 import './PopUpSelection.css';
 
 export default function PopUpSelection ({ updateWorkouts }) {
@@ -10,7 +10,7 @@ export default function PopUpSelection ({ updateWorkouts }) {
 
     // State to track the new workout
     const [newWorkout, setNewWorkout] = useState({
-        groupname: '',  // You can set default values here if needed
+        groupname: '',  
         name: '',
         weight: '',
         reps: '',

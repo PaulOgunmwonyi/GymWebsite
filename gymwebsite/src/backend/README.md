@@ -9,7 +9,7 @@ CREATE TABLE workout (
 );
 
 -- Insert data
-INSERT INTO workout (group_name, name, weight, reps, sets) VALUES
+INSERT INTO workout (groupname, name, weight, reps, sets) VALUES
 ('Pull', 'Unilateral Lat Pulley Row', 120, 9, 2),
 ('Push', 'Incline Dumbbell Press', 75, 7, 3),
 ('Pull', 'Bicep Bilateral Curls', 50, 8, 2),
