@@ -1,0 +1,48 @@
+/* Modal Background */
+.modal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Dark semi-transparent background */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  /* Modal Content Box */
+  .modal-content {
+    background-color: #007bff !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2) !important;
+  }
+  
+  .add-button {
+    margin-top: 20px;
+    border: none !important;
+    background-color: #66bde2 !important;
+    padding: 0px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    color: white !important;
+    width: 100px;
+    height: 60px;
+}
+
+.pop-button {
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 10px;
+    justify-content: center !important; 
+    align-items: center !important; 
+}
+
+.button-container {
+    display: flex; 
+    gap: 10px; /* Space between buttons */
+}

@@ -9,6 +9,7 @@ constant user input. These advantages will not only improve existing gymgoers wo
 non-gymgoers due to the ease of access to important information. 
 
 Notes:
+- npm run dev
 - used these sites for reference:
 - https://react.dev/learn/start-a-new-react-project
 - https://www.youtube.com/watch?v=Y-XW9m8qOis 
